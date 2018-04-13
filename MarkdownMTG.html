@@ -4,17 +4,16 @@
     <title>MTG</title>
 
     <script language="javascript">
-        
+
         function out() {
             var title = "# "+document.mtg_form.title.value+"\n\n";
-            
+
             var member = document.mtg_form.member.value;
             var memArray = member.split(",");
-            
 
             mtg_form.output.value = title;
 
-            mtg_form.output.value += "## ƒƒ“ƒo[\n";
+            mtg_form.output.value += "## ãƒ¡ãƒ³ãƒãƒ¼\n";
             for (var i in memArray) {
                 memArray[i] = memArray[i].trim();
                 mtg_form.output.value += "["+memArray[i]+"](#name"+i+")";
@@ -23,57 +22,56 @@
                 }
             }
 
-
             mtg_form.output.value += "\n\n";
-            mtg_form.output.value += "## ‘S‘Ì‚ÉŒü‚¯‚Ä\n\n";
+            mtg_form.output.value += "## å…¨ä½“ã«å‘ã‘ã¦\n\n";
 
             for (var i in memArray) {
                 mtg_form.output.value += "## <a name=\"name"+i+"\">"+memArray[i]+"</a>" + "\n\n";
                 if (document.mtg_form.Checkbox1.checked == true) {
-                    mtg_form.output.value += "### ‘O‰ñ‚ÌToDo\n\n";
+                    mtg_form.output.value += "### å‰å›ã®ToDo\n\n";
                 }
                 if (document.mtg_form.Checkbox2.checked == true) {
-                    mtg_form.output.value += "### “Ç‚ñ‚¾˜_•¶\n\n";
+                    mtg_form.output.value += "### èª­ã‚“ã è«–æ–‡\n\n";
                 }
                 if (document.mtg_form.Checkbox3.checked == true) {
-                    mtg_form.output.value += "### AŠˆ\n\n";
+                    mtg_form.output.value += "### å°±æ´»\n\n";
                 }
                 if (document.mtg_form.Checkbox4.checked == true) {
-                    mtg_form.output.value += "### ‹Zp\n\n";
+                    mtg_form.output.value += "### æŠ€è¡“\n\n";
                 }
                 if (document.mtg_form.Checkbox5.checked == true) {
-                    mtg_form.output.value += "### ’ñˆÄ\n\n";
+                    mtg_form.output.value += "### ææ¡ˆ\n\n";
                 }
                 if (document.mtg_form.Checkbox6.checked == true) {
-                    mtg_form.output.value += "### Œ¤‹†\n\n";
+                    mtg_form.output.value += "### ç ”ç©¶\n\n";
                 }
                 if (document.mtg_form.Checkbox7.checked == true) {
-                    mtg_form.output.value += "### À‘•\n\n";
+                    mtg_form.output.value += "### å®Ÿè£…\n\n";
                 }
                 if (document.mtg_form.Checkbox8.checked == true) {
-                    mtg_form.output.value += "### ”wŒi\n\n";
+                    mtg_form.output.value += "### èƒŒæ™¯\n\n";
                 }
                 if (document.mtg_form.Checkbox9.checked == true) {
-                    mtg_form.output.value += "### ŠÖ˜AŒ¤‹†\n\n";
+                    mtg_form.output.value += "### é–¢é€£ç ”ç©¶\n\n";
                 }
                 if (document.mtg_form.Checkbox10.checked == true) {
-                    mtg_form.output.value += "### –â‘è“_\n\n";
+                    mtg_form.output.value += "### å•é¡Œç‚¹\n\n";
                 }
                 if (document.mtg_form.Checkbox11.checked == true) {
-                    mtg_form.output.value += "### ƒVƒXƒeƒ€ŠT—v\n\n";
+                    mtg_form.output.value += "### ã‚·ã‚¹ãƒ†ãƒ æ¦‚è¦\n\n";
                 }
                 if (document.mtg_form.Checkbox12.checked == true) {
-                    mtg_form.output.value += "### •]‰¿\n\n";
+                    mtg_form.output.value += "### è©•ä¾¡\n\n";
                 }
                 if (document.mtg_form.Checkbox13.checked == true) {
-                    mtg_form.output.value += "### ‚»‚Ì‘¼\n\n";
+                    mtg_form.output.value += "### ä»Šå¾Œã®äºˆå®š\n\n";
                 }
                 if (document.mtg_form.Checkbox14.checked == true) {
                     mtg_form.output.value += "### ToDo\n\n";
                 }
             }
         }
-        
+
     </script>
 
 </head>
@@ -81,36 +79,36 @@
 
     <form name="mtg_form" action="">
 
-        <label for="title">ƒ^ƒCƒgƒ‹</label>
+        <label for="title">ã‚¿ã‚¤ãƒˆãƒ«</label>
         <input type="text" name="title" />
         <br />
 
-        <label for="member">Q‰ÁÒF</label>
+        <label for="member">å‚åŠ è€…ï¼š</label>
         <input type="text" name="member" />
         <br />
 
-        <label for="contents">‘‚­“à—e</label>
+        <label for="contents">æ›¸ãå†…å®¹</label>
         <br />
-        <input id="Checkbox1" type="checkbox" name="contents" />‘O‰ñ‚ÌToDo
-        <input id="Checkbox2" type="checkbox" name="contents" />“Ç‚ñ‚¾˜_•¶
-        <input id="Checkbox3" type="checkbox" name="contents" />AŠˆ
-        <input id="Checkbox4" type="checkbox" name="contents" />‹Zp
-        <input id="Checkbox5" type="checkbox" name="contents" />’ñˆÄ
-        <input id="Checkbox6" type="checkbox" name="contents" />Œ¤‹†
-        <input id="Checkbox7" type="checkbox" name="contents" />À‘•
-        <input id="Checkbox8" type="checkbox" name="contents" />”wŒi
-        <input id="Checkbox9" type="checkbox" name="contents" />ŠÖ˜AŒ¤‹†
-        <input id="Checkbox10" type="checkbox" name="contents" />–â‘è“_
-        <input id="Checkbox11" type="checkbox" name="contents" />ƒVƒXƒeƒ€ŠT—v
-        <input id="Checkbox12" type="checkbox" name="contents" />•]‰¿
-        <input id="Checkbox13" type="checkbox" name="contents" />‚»‚Ì‘¼
+        <input id="Checkbox1" type="checkbox" name="contents" />å‰å›ã®ToDo
+        <input id="Checkbox2" type="checkbox" name="contents" />èª­ã‚“ã è«–æ–‡
+        <input id="Checkbox3" type="checkbox" name="contents" />å°±æ´»
+        <input id="Checkbox4" type="checkbox" name="contents" />æŠ€è¡“
+        <input id="Checkbox5" type="checkbox" name="contents" />ææ¡ˆ
+        <input id="Checkbox6" type="checkbox" name="contents" />ç ”ç©¶
+        <input id="Checkbox7" type="checkbox" name="contents" />å®Ÿè£…
+        <input id="Checkbox8" type="checkbox" name="contents" />èƒŒæ™¯
+        <input id="Checkbox9" type="checkbox" name="contents" />é–¢é€£ç ”ç©¶
+        <input id="Checkbox10" type="checkbox" name="contents" />å•é¡Œç‚¹
+        <input id="Checkbox11" type="checkbox" name="contents" />ã‚·ã‚¹ãƒ†ãƒ æ¦‚è¦
+        <input id="Checkbox12" type="checkbox" name="contents" />è©•ä¾¡
+        <input id="Checkbox13" type="checkbox" name="contents" />ä»Šå¾Œã®äºˆå®š
         <input id="Checkbox14" type="checkbox" name="contents" />ToDo
 
         <br />
-        <input type="button" value="o—Í" onclick="out()" />
+        <input type="button" value="å‡ºåŠ›" onclick="out()" />
         <br />
 
-        o—ÍŒ‹‰Ê
+        å‡ºåŠ›çµæœ
         <textarea rows="50" cols="50" name="output">
         </textarea>
 
